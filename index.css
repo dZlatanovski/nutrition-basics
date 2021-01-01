@@ -1,0 +1,250 @@
+body {
+    position: relative;
+    padding-top: 50px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+section ul:not(.browser-default)>li {
+    list-style: initial;
+}
+
+section {
+    padding: 20px 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.macros-section {
+    background-image: url('./media/macros-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.supplements-section {
+    background-color: #DFE0F1;
+}
+
+.main .card-image {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .card-title {
+    width: 100%;
+    background: rgba(0,0,0,.5);
+}
+
+.card-image.pancakes {
+    background-image: url('./media/pancakes-bg.jpeg');
+}
+
+.card-image.french-toast {
+    background-image: url('./media/french-toast-bg.jpg');
+}
+
+.card-image.zucchini-egg-slices {
+    background-image: url('./media/zucchini-egg-slices-bg.jpg');
+}
+
+.lentils-veggie-stew {
+    background-image: url('./media/lentils-stew.jpg');
+}
+
+.oatmeal {
+    background-image: url('./media/oatmeal-bg.jpg');
+}
+
+.noodles {
+    background: url('./media/noodles.jpg');
+}
+
+.eggs-n-tuna {
+    background: url('./media/eggs-n-tuna.jpg');
+}
+
+.tuna-salad {
+    background: url('./media/tuna-salad.jpg');
+}
+
+.lentils-pasta {
+    background: url('./media/lentils-pasta.jpg');
+}
+
+.bulgur-salad {
+    background: url('./media/bulgur-salad.jpg');
+}
+
+.eggs-n-beans {
+    background: url('./media/eggs-n-beans.jpg');
+}
+
+.vitamin-d {
+    background: url('./media/vitamin-d.jpg');;
+}
+
+.vitamins-n-minerals {
+    background: url('./media/vitamins-n-minerals.png');
+}
+
+.whey-protein {
+    background: url('./media/whey-protein.jpg');
+}
+
+.butter {
+    background: url('./media/butter.jpg');
+}
+
+.orange-juice {
+    background: url('./media/orange-juice.jpg');
+}
+
+.raw-veggies {
+    background: url('./media/raw-veggies.jpeg');
+}
+
+.blood-cells {
+    background: url('./media/blood-cells.jpg');
+}
+
+.ingredient_preview {
+    text-decoration: underline;
+}
+
+.ingredients-section {
+    background-image: url('./media/ingredients-bg.png');
+    background-repeat: repeat;
+    padding: 0;
+}
+
+.ingredients-section-wrapper {
+    background-color: rgba(0,0,0,.4);
+    padding: 15px 0;
+}
+
+.ingredients-section i {
+    color: #fff;
+}
+
+#ingredient-search {
+    color: #fff;
+}
+
+#ingredient-search:focus {
+    color: #ffcc80;
+}
+
+/* label color */
+.ingredients-section .input-field input[type=text] + label {
+    color: #fff;
+}
+/* label underline color */
+.ingredients-section .input-field input[type=text] {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+/* icon prefix color */
+.ingredients-section .input-field .prefix {
+    color: #fff;
+}
+
+/* label focus color */
+.ingredients-section .input-field input[type=text]:focus + label {
+    color: #ffcc80;
+}
+/* label underline focus color */
+.ingredients-section .input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffcc80;
+    box-shadow: 0 1px 0 0 #ffcc80;
+}
+
+/* icon prefix focus color */
+.ingredients-section .input-field .prefix.active {
+    color: #ffcc80;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ingredient-item {
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.ingredient-item.hidden {
+    display: none;
+}
+
+.ingredient-item-title {
+    margin: 0;
+}
+
+.ingredient-item-macros {
+    padding-left: 20px;
+    margin: 5px 0 0;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredients-iframe {
+    display: none;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ingredients-iframe.active {
+    display: block;
+}
+
+.ingredient-item-macros li:first-of-type {
+    color: green;
+}
+
+.ingredient-item-macros li:nth-of-type(2) {
+    color: violet;
+}
+
+.ingredient-item-macros li:last-of-type {
+    color: red;
+}
+
+.ingredient_preview_img {
+    position: absolute;
+    max-width: 150px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .ingredients-iframe {
+        width: 100%;
+    }
+}
