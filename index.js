@@ -58,7 +58,19 @@ $(function() {
                 let itemMacros = $('<ul class="ingredient-item-macros">');
                 for (const key in element) {
                     if (Object.hasOwnProperty.call(element, key)) {
-                        $('<li>' + key + ": " + element[key] + "</li>").appendTo(itemMacros);
+                        let measurement;
+                        switch (key) {
+                            case "Калории":
+                                measurement = "kcal";
+                                break;
+                            case "Протеин":
+                                measurement = "g";
+                                break;
+                            case "Железо":
+                                measurement = "mg";
+                                break;
+                        }
+                        $('<li>' + key + ": " + element[key] + measurement + "</li>").appendTo(itemMacros);
                     }
                 }
                 item.append(itemMacros);
